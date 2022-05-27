@@ -4,14 +4,14 @@
 # --> {"cake":2, "big":1, "is":2, "the":1, "a":1, "it":1}
 
 def read_file_content(filename):
-   with open('/workspace/zuri_python_task./Reading-Text-Files/story.txt') as file:
+   with open(filename) as file:
     contents = file.read()
     print(contents)
     return "Hello World"
 
 
-def count_words():
-    text = open("/workspace/zuri_python_task./Reading-Text-Files/story.txt", "r")
+def count_words(filename):
+    text = open(filename, "r")
     d = dict()
     for line in text:
 	    line = line.strip()
@@ -28,5 +28,5 @@ def count_words():
    
 #return {"as": 10, "would": 20}
 
-read_file_content("./story.txt")
-count_words()
+read_file_content("/workspace/zuri_python_task./Reading-Text-Files/story.txt")
+count_words("/workspace/zuri_python_task./Reading-Text-Files/story.txt")
