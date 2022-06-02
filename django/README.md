@@ -1,0 +1,1 @@
+This is a project from zuri titled setting up virtual enviroment for django
